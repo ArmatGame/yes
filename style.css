@@ -1,0 +1,169 @@
+/* Start Variables */
+:root {
+  --main-color: #26bba5;
+  --color-one: #5f75ff;
+  --color-two: #4b5258;
+  --color-three: #a7adab;
+}
+/* End Variables */
+/* Start Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-image: url("bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+@media (max-width: 767px) {
+  body {
+    background-image: url("bg-header-mobile.png");
+  }
+}
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: red; */
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (max-width: 546px) {
+
+}
+/* End Global Rules */
+/* Start Framework */
+
+/* End Framework */
+/* Start Components */
+.special-heading {
+  color: var(--color-two);
+  margin-bottom: 1rem;
+}
+
+.special-heading + p {
+  color: var(--color-three);
+}
+
+@media (max-width: 546px) {
+  .special-heading + p {
+    font-size: 12px;
+  }
+}
+
+.btn {
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+@media (max-width: 450px) {
+  .btn {
+    width: auto;
+    flex-direction: column;
+  }
+}
+
+.btn a {
+  color: white;
+  width: 200px;
+  display: block;
+  text-decoration: none;
+  padding: 18px 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+@media (max-width: 450px) {
+  .btn a {
+    margin-bottom: 10px;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+}
+
+.btn a:first-child {
+  background-color: var(--main-color);
+}
+
+.btn a:last-child {
+  background-color: var(--color-one);
+}
+/* End Components */
+/* Start Header */
+header {
+  /* background-color: red; */
+  height: 80vh;
+
+}
+
+header .container {
+  /* background-color: green; */
+  min-width: 320px;
+  height: 100%;
+  padding-top: 100px;
+  text-align: center;
+}
+
+header .image {
+  margin-bottom: 3rem;
+}
+
+header .text {
+  margin-bottom: 3rem;
+}
+
+header .text h1 {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 546px) {
+  header .text h1 {
+    font-size: 1.5rem;
+  }
+}
+/* End Header */
+
+
